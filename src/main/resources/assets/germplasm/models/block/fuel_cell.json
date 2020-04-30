@@ -1,0 +1,73 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/fuel_cell/front",
+        "top":"germplasm:blocks/fuel_cell/top",
+        "bottom":"germplasm:blocks/fuel_cell/bottom",
+        "side":"germplasm:blocks/fuel_cell/side",
+        "front":"germplasm:blocks/fuel_cell/front",
+        "base_top":"germplasm:blocks/fuel_cell/base_top"
+    },
+    "elements": [
+        {   "__comment": "tube 1",
+            "from": [ 1, 7, 1 ],
+            "to": [ 7, 16, 7 ],
+            "faces": {
+                "down":    { "texture": "#top" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        },
+        {   "__comment": "tube 2",
+            "from": [ 9, 7, 1 ],
+            "to": [ 15, 16, 7 ],
+            "faces": {
+                "down":    { "texture": "#top" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        },
+        {   "__comment": "tube 3",
+            "from": [ 1, 7, 9 ],
+            "to": [ 7, 16, 15 ],
+            "faces": {
+                "down":    { "texture": "#top" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        },
+        {   "__comment": "tube 4",
+            "from": [ 9, 7, 9 ],
+            "to": [ 15, 16, 15 ],
+            "faces": {
+                "down":    { "texture": "#top" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        },
+        {   "__comment": "base",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 7, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom" },
+                "up":    { "texture": "#base_top" },
+                "north": { "texture": "#front" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

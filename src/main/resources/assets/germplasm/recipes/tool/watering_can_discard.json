@@ -1,0 +1,12 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "germplasm:watering_can",
+      "data": 32767
+    }
+  ],
+  "result": {
+    "item": "germplasm:watering_can"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:thresher" },
+        "facing=south": { "model": "germplasm:thresher", "y": 180 },
+        "facing=west":  { "model": "germplasm:thresher", "y": 270 },
+        "facing=east":  { "model": "germplasm:thresher", "y": 90 }
+    }
+}

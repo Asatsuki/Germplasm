@@ -1,0 +1,33 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "ACA",
+    "O#O",
+    " B "
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:genetics_casing",
+      "data": 0
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "ingotGold"
+    },
+    "A": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    },
+    "B": {
+      "item": "germplasm:capacitor_unit",
+      "data": 0
+    },
+    "C": {
+      "item": "germplasm:reagent_bottle",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:electroporator"
+  }
+}

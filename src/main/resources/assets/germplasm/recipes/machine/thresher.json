@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "X X",
+    "Y#Y",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_bars",
+      "data": 0
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "Y": {
+      "type": "forge:ore_dict",
+      "ore": "slabWood"
+    }
+  },
+  "result": {
+    "item": "germplasm:thresher"
+  }
+}

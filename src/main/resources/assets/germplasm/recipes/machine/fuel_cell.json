@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "O O",
+    "OAO",
+    "X#X"
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:base_casing",
+      "data": 0
+    },
+    "O": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "A": {
+      "item": "germplasm:basic_processor",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:fuel_cell"
+  }
+}

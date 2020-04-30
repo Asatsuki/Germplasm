@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "OX ",
+    "XX ",
+    "  #"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "nuggetIron"
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "paneGlassColorless"
+    }
+  },
+  "result": {
+    "item": "germplasm:loupe"
+  }
+}

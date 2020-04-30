@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "*O*",
+    "*#*",
+    "*O*"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "itemSilicon"
+    },
+    "*": {
+      "type": "forge:ore_dict",
+      "ore": "nuggetGold"
+    }
+  },
+  "result": {
+    "item": "germplasm:advanced_processor"
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/plastic_light/light",
+        "light":"germplasm:blocks/plastic_light/light",
+        "fixture":"germplasm:blocks/plastic_light/fixture"
+    },
+    "elements": [
+        {   "__comment": "base",
+            "from": [ 2, 7, 2 ],
+            "to": [ 14, 8, 14 ],
+            "faces": {
+                "down":  { "texture": "#fixture", "cullface": "down" },
+                "up":    { "texture": "#fixture" },
+                "north": { "texture": "#fixture" },
+                "south": { "texture": "#fixture" },
+                "west":  { "texture": "#fixture" },
+                "east":  { "texture": "#fixture" }
+            }
+        },
+        {   "__comment": "light",
+            "from": [ 3, 8, 3 ],
+            "to": [ 13, 9, 13 ],
+            "faces": {
+                
+                "up":    { "texture": "#light" },
+                "north": { "texture": "#light" },
+                "south": { "texture": "#light" },
+                "west":  { "texture": "#light" },
+                "east":  { "texture": "#light" }
+            }
+        }
+    ]
+}

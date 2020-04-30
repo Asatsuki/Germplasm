@@ -1,0 +1,19 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "X#X"
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:solid_medium",
+      "data": 0
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "dustGlowstone"
+    }
+  },
+  "result": {
+    "item": "germplasm:genome_filter"
+  }
+}

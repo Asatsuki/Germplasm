@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "*#*",
+    "*O*",
+    "*#*"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "*": {
+      "type": "forge:ore_dict",
+      "ore": "nuggetIron"
+    }
+  },
+  "result": {
+    "item": "germplasm:basic_processor"
+  }
+}

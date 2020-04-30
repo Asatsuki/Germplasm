@@ -1,0 +1,21 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " # ",
+    "O O",
+    " O "
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "blockGlassColorless"
+    }
+  },
+  "result": {
+    "item": "germplasm:reagent_bottle"
+  }
+}

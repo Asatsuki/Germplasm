@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "X-X",
+    "#O#",
+    "X-X"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "barsIron"
+    },
+    "-": {
+      "type": "forge:ore_dict",
+      "ore": "dyeOrange"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "O": {
+      "item": "germplasm:base_casing",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:agriculture_casing"
+  }
+}

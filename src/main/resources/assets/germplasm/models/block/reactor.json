@@ -1,0 +1,62 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/reactor/top",
+        "top":"germplasm:blocks/reactor/top",
+        "bottom":"germplasm:blocks/reactor/top",
+        "side":"germplasm:blocks/reactor/side",
+        "front":"germplasm:blocks/reactor/front",
+        "tube_base_top":"germplasm:blocks/reactor/tube_base_top",
+        "tube_top":"germplasm:blocks/reactor/tube_top"
+    },
+    "elements": [
+        {   "__comment": "Cloner base",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 7, 16 ],
+            "faces": {
+                "down":  { "texture": "#top", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "front", "cullface": "north" },
+                "south": { "texture": "#side", "cullface": "south" },
+                "west":  { "texture": "#side", "cullface": "west" },
+                "east":  { "texture": "#side", "cullface": "east" }
+            }
+        },
+        {   "__comment": "Cloner tube base",
+            "from": [ 2, 7, 2 ],
+            "to": [ 14, 8, 14 ],
+            "faces": {
+                "down":  { "texture": "#tube_base_top" },
+                "up":    { "texture": "#tube_base_top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        },
+        {   "__comment": "Cloner tube",
+            "from": [ 3, 8, 3 ],
+            "to": [ 13, 15, 13 ],
+            "faces": {
+                "down":  { "texture": "#tube_top" },
+                "up":    { "texture": "#tube_top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        },
+        {   "__comment": "Cloner top",
+            "from": [ 3, 15, 3 ],
+            "to": [ 13, 16, 13 ],
+            "faces": {
+                "down":  { "texture": "#tube_top" },
+                "up":    { "texture": "#tube_top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

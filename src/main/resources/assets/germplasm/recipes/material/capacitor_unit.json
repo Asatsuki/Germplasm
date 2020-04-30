@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " * ",
+    "*#*",
+    "X X"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "blockRedstone"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "*": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:capacitor_unit"
+  }
+}

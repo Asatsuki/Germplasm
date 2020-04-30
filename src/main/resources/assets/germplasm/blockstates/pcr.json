@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:pcr" },
+        "facing=south": { "model": "germplasm:pcr", "y": 180 },
+        "facing=west":  { "model": "germplasm:pcr", "y": 270 },
+        "facing=east":  { "model": "germplasm:pcr", "y": 90 }
+    }
+}

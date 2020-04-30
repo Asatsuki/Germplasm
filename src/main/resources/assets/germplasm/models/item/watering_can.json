@@ -1,0 +1,4 @@
+{
+    "parent":"germplasm:item/watering_can_base",
+    "textures":{"layer0":"germplasm:items/watering_can"}
+}

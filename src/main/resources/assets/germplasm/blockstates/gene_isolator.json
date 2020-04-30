@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:gene_isolator" },
+        "facing=south": { "model": "germplasm:gene_isolator", "y": 180 },
+        "facing=west":  { "model": "germplasm:gene_isolator", "y": 270 },
+        "facing=east":  { "model": "germplasm:gene_isolator", "y": 90 }
+    }
+}

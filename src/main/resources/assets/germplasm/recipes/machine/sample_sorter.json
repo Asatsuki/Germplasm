@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " X ",
+    "OYO",
+    " Z "
+  ],
+  "key": {
+    "O": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    },
+    "X": {
+      "item": "minecraft:hopper",
+      "data": 0
+    },
+    "Y": {
+      "item": "germplasm:agriculture_casing",
+      "data": 0
+    },
+    "Z": {
+      "type": "forge:ore_dict",
+      "ore": "blockGlassColorless"
+    }
+  },
+  "result": {
+    "item": "germplasm:sample_sorter"
+  }
+}

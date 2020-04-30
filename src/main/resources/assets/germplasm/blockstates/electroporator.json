@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:electroporator" },
+        "facing=south": { "model": "germplasm:electroporator", "y": 180 },
+        "facing=west":  { "model": "germplasm:electroporator", "y": 270 },
+        "facing=east":  { "model": "germplasm:electroporator", "y": 90 }
+    }
+}

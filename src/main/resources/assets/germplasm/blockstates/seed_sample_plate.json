@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "inventory": { "model": "germplasm:seed_sample_plate" }
+    }
+}

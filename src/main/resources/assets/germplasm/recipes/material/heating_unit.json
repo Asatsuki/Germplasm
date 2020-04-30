@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "#*#",
+    "# #",
+    "X X"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "*": {
+      "type": "forge:ore_dict",
+      "ore": "barsIron"
+    }
+  },
+  "result": {
+    "item": "germplasm:heating_unit"
+  }
+}

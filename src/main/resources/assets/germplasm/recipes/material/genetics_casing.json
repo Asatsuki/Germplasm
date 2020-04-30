@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "X-X",
+    "#O#",
+    "X-X"
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:advanced_processor",
+      "data": 0
+    },
+    "-": {
+      "type": "forge:ore_dict",
+      "ore": "dyeLightBlue"
+    },
+    "X": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    },
+    "O": {
+      "item": "germplasm:base_casing",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:genetics_casing"
+  }
+}

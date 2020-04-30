@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=down":  { "model": "germplasm:plastic_wall_light", "x": 180 },
+        "facing=up":  { "model": "germplasm:plastic_wall_light" },
+        "facing=north": { "model": "germplasm:plastic_wall_light", "x": 90 },
+        "facing=south": { "model": "germplasm:plastic_wall_light", "x": 270 },
+        "facing=west":  { "model": "germplasm:plastic_wall_light", "x": 270, "y": 90 },
+        "facing=east":  { "model": "germplasm:plastic_wall_light", "x": 90, "y": 90 }
+    }
+}

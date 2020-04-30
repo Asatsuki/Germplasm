@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:incubator" },
+        "facing=south": { "model": "germplasm:incubator", "y": 180 },
+        "facing=west":  { "model": "germplasm:incubator", "y": 270 },
+        "facing=east":  { "model": "germplasm:incubator", "y": 90 }
+    }
+}

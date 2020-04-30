@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "germplasm:genetic_crop" }
+    }
+}

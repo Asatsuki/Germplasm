@@ -1,0 +1,33 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " Y ",
+    "XWZ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:desk",
+      "data": 0
+    },
+    "W": {
+      "item": "minecraft:writable_book",
+      "data": 0
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "paneGlassColorless"
+    },
+    "Y": {
+      "item": "minecraft:book",
+      "data": 0
+    },
+    "Z": {
+      "type": "forge:ore_dict",
+      "ore": "paper"
+    }
+  },
+  "result": {
+    "item": "germplasm:research_desk"
+  }
+}

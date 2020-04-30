@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:bioplastic_block"
+  }
+}

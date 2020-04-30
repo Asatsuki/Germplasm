@@ -1,0 +1,85 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/genome_analyzer/front",
+        "casing":"germplasm:blocks/genome_analyzer/case",
+        "top":"germplasm:blocks/genome_analyzer/top",
+        "bottom":"germplasm:blocks/genome_analyzer/bottom",
+        "front":"germplasm:blocks/genome_analyzer/front",
+        "left":"germplasm:blocks/genome_analyzer/left",
+        "right":"germplasm:blocks/genome_analyzer/right",
+        "back":"germplasm:blocks/genome_analyzer/back",
+        "inner":"germplasm:blocks/genome_analyzer/inner",
+        "cover":"germplasm:blocks/genome_analyzer/cover"
+    },
+    "elements": [
+        {   "__comment": "Sequencer top",
+            "from": [ 0, 10, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#inner" },
+                "up":    { "texture": "#top", "cullface": "up" },
+                "north": { "texture": "#front", "cullface": "north" },
+                "south": { "texture": "#back", "cullface": "south" },
+                "west":  { "texture": "#right", "cullface": "west" },
+                "east":  { "texture": "#left", "cullface": "east" }
+            }
+        },
+        {   "__comment": "Sequencer bottom",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 2, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#inner" },
+                "north": { "texture": "#front", "cullface": "north" },
+                "south": { "texture": "#back", "cullface": "south" },
+                "west":  { "texture": "#right", "cullface": "west" },
+                "east":  { "texture": "#left", "cullface": "east" }
+            }
+
+        },
+        {   "__comment": "Sequencer back",
+            "from": [ 2, 2, 12 ],
+            "to": [ 10, 10, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom" },
+                "up":    { "texture": "#casing" },
+                "north": { "texture": "#inner" },
+                "south": { "texture": "#back" },
+                "west":  { "texture": "#right" },
+                "east":  { "texture": "#left" }
+            }
+        },
+        {   "__comment": "Sequencer left",
+            "from": [ 0, 2, 0 ],
+            "to": [ 2, 10, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom" },
+                "up":    { "texture": "#casing" },
+                "north": { "texture": "#front" },
+                "south": { "texture": "#back" },
+                "west":  { "texture": "#right" },
+                "east":  { "texture": "#inner" }
+            }
+        },
+        {   "__comment": "Sequencer right",
+            "from": [ 10, 2, 0 ],
+            "to": [ 16, 10, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom" },
+                "up":    { "texture": "#casing" },
+                "north": { "texture": "#front" },
+                "south": { "texture": "#back" },
+                "west":  { "texture": "#inner" },
+                "east":  { "texture": "#left" }
+            }
+        },
+        {   "__comment": "Sequencer cover",
+            "from": [ 2, 2, 1 ],
+            "to": [ 10, 10, 1 ],
+            "faces": {
+                "north": { "texture": "#cover" }
+            }
+        }
+    ]
+}

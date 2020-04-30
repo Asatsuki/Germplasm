@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:fuel_cell" },
+        "facing=south": { "model": "germplasm:fuel_cell", "y": 180 },
+        "facing=west":  { "model": "germplasm:fuel_cell", "y": 270 },
+        "facing=east":  { "model": "germplasm:fuel_cell", "y": 90 }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/microscope/top",
+        "top":"germplasm:blocks/microscope/top",
+        "bottom":"germplasm:blocks/microscope/bottom",
+        "side":"germplasm:blocks/microscope/side",
+        "bar":"germplasm:blocks/microscope/bar",
+        "lens":"germplasm:blocks/microscope/lens",
+        "objective_lens":"germplasm:blocks/microscope/objective_lens",
+        "eyepiece":"germplasm:blocks/microscope/eyepiece"
+    },
+    "elements": [
+        {   "__comment": "Microscope stage",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 3, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side", "cullface": "north" },
+                "south": { "texture": "#side", "cullface": "south" },
+                "west":  { "texture": "#side", "cullface": "west" },
+                "east":  { "texture": "#side", "cullface": "east" }
+            }
+        },
+        {   "__comment": "Microscope bar",
+            "from": [ 7, 3, 14 ],
+            "to": [ 9, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#bar" },
+                "up":    { "texture": "#bar", "cullface": "up"},
+                "north": { "texture": "#bar" },
+                "south": { "texture": "#bar" },
+                "west":  { "texture": "#bar" },
+                "east":  { "texture": "#bar" }
+            }
+        },
+        {   "__comment": "Microscope body",
+            "from": [ 4, 10, 5 ],
+            "to": [ 12, 12, 15 ],
+            "faces": {
+                "down":  { "texture": "#bar" },
+                "up":    { "texture": "#bar" },
+                "north": { "texture": "#bar" },
+                "south": { "texture": "#bar" },
+                "west":  { "texture": "#bar" },
+                "east":  { "texture": "#bar" }
+            }
+        },
+        {   "__comment": "Microscope objective lens",
+            "from": [ 6, 8, 6 ],
+            "to": [ 10, 10, 10 ],
+            "faces": {
+                "down":  { "texture": "#objective_lens" },
+                "up":    { "texture": "#lens" },
+                "north": { "texture": "#lens" },
+                "south": { "texture": "#lens" },
+                "west":  { "texture": "#lens" },
+                "east":  { "texture": "#lens" }
+            }
+        },
+        {   "__comment": "Microscope left eyepiece",
+            "from": [ 9, 11, 6 ],
+            "to": [ 11, 16, 8 ],
+            "rotation": {
+                "origin": [8, 14, 7],
+                "axis": "x",
+                "angle": -22.5
+            },
+            "faces": {
+                "down":  { "texture": "#lens" },
+                "up":    { "texture": "#eyepiece" },
+                "north": { "texture": "#lens" },
+                "south": { "texture": "#lens" },
+                "west":  { "texture": "#lens" },
+                "east":  { "texture": "#lens" }
+            }
+        },
+        {   "__comment": "Microscope right eyepiece",
+            "from": [ 5, 11, 6 ],
+            "to": [ 7, 16, 8 ],
+            "rotation": {
+                "origin": [8, 14, 7],
+                "axis": "x",
+                "angle": -22.5
+            },
+            "faces": {
+                "down":  { "texture": "#lens" },
+                "up":    { "texture": "#eyepiece" },
+                "north": { "texture": "#lens" },
+                "south": { "texture": "#lens" },
+                "west":  { "texture": "#lens" },
+                "east":  { "texture": "#lens" }
+            }
+        }
+    ]
+}

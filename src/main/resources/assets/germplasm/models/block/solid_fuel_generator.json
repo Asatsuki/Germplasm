@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "germplasm:blocks/solid_fuel_generator/top",
+        "front": "germplasm:blocks/solid_fuel_generator/front",
+        "side": "germplasm:blocks/solid_fuel_generator/side"
+    }
+}

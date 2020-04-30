@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AAA",
+    "O#O",
+    "OBO"
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:genetics_casing",
+      "data": 0
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "A": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    },
+    "B": {
+      "item": "germplasm:motor_unit",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:gene_isolator"
+  }
+}

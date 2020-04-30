@@ -1,0 +1,33 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "#X#",
+    "OYO",
+    "#Z#"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "ingotGold"
+    },
+    "X": {
+      "item": "germplasm:microscope",
+      "data": 0
+    },
+    "Y": {
+      "item": "germplasm:agriculture_casing",
+      "data": 0
+    },
+    "Z": {
+      "type": "forge:ore_dict",
+      "ore": "blockGlass"
+    }
+  },
+  "result": {
+    "item": "germplasm:genome_analyzer"
+  }
+}

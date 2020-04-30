@@ -1,0 +1,37 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AOB",
+    "#*#",
+    "X X"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "*": {
+      "item": "germplasm:heating_unit",
+      "data": 0
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "blockQuartz"
+    },
+    "A": {
+        "item": "minecraft:lava_bucket",
+        "data": 0
+    },
+    "B": {
+        "item": "minecraft:packed_ice",
+        "data": 0
+    } 
+  },
+  "result": {
+    "item": "germplasm:thermal_unit"
+  }
+}

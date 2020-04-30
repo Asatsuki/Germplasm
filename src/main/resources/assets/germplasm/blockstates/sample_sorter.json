@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:sample_sorter" },
+        "facing=south": { "model": "germplasm:sample_sorter", "y": 180 },
+        "facing=west":  { "model": "germplasm:sample_sorter", "y": 270 },
+        "facing=east":  { "model": "germplasm:sample_sorter", "y": 90 }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/sample_sorter/front",
+        "top":"germplasm:blocks/sample_sorter/top",
+        "bottom":"germplasm:blocks/sample_sorter/top",
+        "side":"germplasm:blocks/sample_sorter/side",
+        "front":"germplasm:blocks/sample_sorter/front"
+    },
+    "elements": [
+        {   "__comment": "core",
+            "from": [ 1, 4, 1 ],
+            "to": [ 15, 12, 15 ],
+            "faces": {
+                
+                
+                "north": { "texture": "#front" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        },
+        {   "__comment": "bottom",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 4, 16 ],
+            "faces": {
+                "down":    { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#front", "cullface": "north" },
+                "south": { "texture": "#side", "cullface": "south" },
+                "west":  { "texture": "#side", "cullface": "west" },
+                "east":  { "texture": "#side", "cullface": "east" }
+            }
+        },
+        {   "__comment": "top",
+            "from": [ 0, 12, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":    { "texture": "#bottom" },
+                "up":    { "texture": "#top", "cullface": "up" },
+                "north": { "texture": "#front", "cullface": "north" },
+                "south": { "texture": "#side", "cullface": "south" },
+                "west":  { "texture": "#side", "cullface": "west" },
+                "east":  { "texture": "#side", "cullface": "east" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:microscope" },
+        "facing=south": { "model": "germplasm:microscope", "y": 180 },
+        "facing=west":  { "model": "germplasm:microscope", "y": 270 },
+        "facing=east":  { "model": "germplasm:microscope", "y": 90 }
+    }
+}

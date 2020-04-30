@@ -1,0 +1,73 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/dna_extractor/front",
+        "top":"germplasm:blocks/dna_extractor/top",
+        "bottom":"germplasm:blocks/dna_extractor/bottom",
+        "side":"germplasm:blocks/dna_extractor/side",
+        "front":"germplasm:blocks/dna_extractor/front",
+        "back":"germplasm:blocks/dna_extractor/back",
+        "inner":"germplasm:blocks/dna_extractor/inner"
+    },
+    "elements": [
+        {   "__comment": "base",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 6, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#inner" },
+                "north": { "texture": "#front", "cullface": "north" },
+                "south": { "texture": "#back", "cullface": "south" },
+                "west":  { "texture": "#side", "cullface": "west" },
+                "east":  { "texture": "#side", "cullface": "east" }
+            }
+        },
+        {   "__comment": "top right",
+            "from": [ 0, 6, 0 ],
+            "to": [ 2, 16, 16 ],
+            "faces": {
+                
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#front", "cullface": "north" },
+                "south": { "texture": "#back", "cullface": "south" },
+                "west":  { "texture": "#side", "cullface": "west" },
+                "east":  { "texture": "#inner" }
+            }
+        },
+        {   "__comment": "top left",
+            "from": [ 10, 6, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#front", "cullface": "north" },
+                "south": { "texture": "#back", "cullface": "south" },
+                "west":  { "texture": "#inner" },
+                "east":  { "texture": "#side", "cullface": "east" }
+            }
+        },
+        {   "__comment": "window",
+            "from": [ 2, 6, 1 ],
+            "to": [ 10, 15, 10 ],
+            "faces": {
+                
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#front", "cullface": "north" }
+                
+                
+            }
+        },
+        {   "__comment": "top back",
+            "from": [ 2, 6, 10 ],
+            "to": [ 10, 16, 16 ],
+            "faces": {
+                
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#inner" },
+                "south": { "texture": "#back", "cullface": "south" }
+                
+                
+            }
+        }
+    ]
+}

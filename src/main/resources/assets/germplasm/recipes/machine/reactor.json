@@ -1,0 +1,33 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "#X#",
+    "OYO",
+    " Z "
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "blockGlassColorless"
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "X": {
+      "item": "germplasm:motor_unit",
+      "data": 0
+    },
+    "Y": {
+      "item": "germplasm:biotechnology_casing",
+      "data": 0
+    },
+    "Z": {
+      "item": "germplasm:heating_unit",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:reactor"
+  }
+}

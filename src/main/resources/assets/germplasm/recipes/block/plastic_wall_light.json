@@ -1,0 +1,21 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " # ",
+    "#o#"
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:bioplastic",
+      "data": 0
+    },
+    "o": {
+      "type": "forge:ore_dict",
+      "ore": "dustGlowstone"
+    }
+  },
+  "result": {
+    "item": "germplasm:plastic_wall_light",
+    "count": 4
+  }
+}

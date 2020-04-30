@@ -1,0 +1,33 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "X*X",
+    "#Y#",
+    " Z "
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "barsIron"
+    },
+    "*": {
+      "type": "forge:ore_dict",
+      "ore": "blockGlassColorless"
+    },
+    "X": {
+      "item": "minecraft:stone",
+      "data": 0
+    },
+    "Y": {
+      "item": "germplasm:biotechnology_casing",
+      "data": 0
+    },
+    "Z": {
+      "item": "germplasm:heating_unit",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:incubator"
+  }
+}

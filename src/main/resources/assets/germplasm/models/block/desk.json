@@ -1,0 +1,70 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/research_desk/top",
+        "top": "germplasm:blocks/research_desk/top",
+        "leg": "germplasm:blocks/research_desk/leg"
+    },
+    "elements": [
+        {   "__comment": "Desk top board",
+            "from": [ 0, 14, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#top" },
+                "up":    { "texture": "#top", "cullface": "up" },
+                "north": { "texture": "#top", "cullface": "north" },
+                "south": { "texture": "#top", "cullface": "south" },
+                "west":  { "texture": "#top", "cullface": "west" },
+                "east":  { "texture": "#top", "cullface": "east" }
+            }
+        },
+        {   "__comment": "Desk leg 1",
+            "from": [ 0, 0, 0 ],
+            "to": [ 2, 14, 2 ],
+            "faces": {
+                "down":  { "texture": "#leg", "cullface": "down" },
+                "up":    { "texture": "#leg" },
+                "north": { "texture": "#leg", "cullface": "north" },
+                "south": { "texture": "#leg" },
+                "west":  { "texture": "#leg", "cullface": "west" },
+                "east":  { "texture": "#leg" }
+            }
+        },
+        {   "__comment": "Desk leg 2",
+            "from": [ 14, 0, 0 ],
+            "to": [ 16, 14, 2 ],
+            "faces": {
+                "down":  { "texture": "#leg", "cullface": "down" },
+                "up":    { "texture": "#leg" },
+                "north": { "texture": "#leg", "cullface": "north" },
+                "south": { "texture": "#leg" },
+                "west":  { "texture": "#leg" },
+                "east":  { "texture": "#leg", "cullface": "east" }
+            }
+        },
+        {   "__comment": "Desk leg 3",
+            "from": [ 0, 0, 14 ],
+            "to": [ 2, 14, 16 ],
+            "faces": {
+                "down":  { "texture": "#leg", "cullface": "down" },
+                "up":    { "texture": "#leg" },
+                "north": { "texture": "#leg" },
+                "south": { "texture": "#leg", "cullface": "south" },
+                "west":  { "texture": "#leg", "cullface": "west" },
+                "east":  { "texture": "#leg" }
+            }
+        },
+        {   "__comment": "Desk leg 4",
+            "from": [ 14, 0, 14 ],
+            "to": [ 16, 14, 16 ],
+            "faces": {
+                "down":  { "texture": "#leg", "cullface": "down" },
+                "up":    { "texture": "#leg" },
+                "north": { "texture": "#leg" },
+                "south": { "texture": "#leg", "cullface": "south" },
+                "west":  { "texture": "#leg" },
+                "east":  { "texture": "#leg", "cullface": "east" }
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "item": "germplasm:solid_medium",
+      "data": 0
+    },
+    {
+      "item": "germplasm:auxin",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "germplasm:solid_medium_auxin"
+  }
+}

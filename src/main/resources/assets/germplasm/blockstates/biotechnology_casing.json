@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "germplasm:biotechnology_casing" }
+    }
+}

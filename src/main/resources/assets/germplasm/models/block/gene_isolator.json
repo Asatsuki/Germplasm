@@ -1,0 +1,51 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/gene_isolator/front",
+        "top":"germplasm:blocks/gene_isolator/top",
+        "bottom":"germplasm:blocks/gene_isolator/bottom",
+        "side":"germplasm:blocks/gene_isolator/side",
+        "front":"germplasm:blocks/gene_isolator/front",
+        "cover_top":"germplasm:blocks/gene_isolator/cover_top",
+        "inner_side":"germplasm:blocks/gene_isolator/inner_side",
+        "inner_top":"germplasm:blocks/gene_isolator/inner_top"
+    },
+    "elements": [
+        {   "__comment": "base",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 8, 16 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#front", "cullface": "north" },
+                "south": { "texture": "#side", "cullface": "south" },
+                "west":  { "texture": "#side", "cullface": "west" },
+                "east":  { "texture": "#side", "cullface": "east" }
+            }
+        },
+        {   "__comment": "inner",
+            "from": [ 3, 8, 3 ],
+            "to": [ 13, 10, 13 ],
+            "faces": {
+                
+                "up":    { "texture": "#inner_top" },
+                "north": { "texture": "#inner_side" },
+                "south": { "texture": "#inner_side" },
+                "west":  { "texture": "#inner_side" },
+                "east":  { "texture": "#inner_side" }
+            }
+        },
+        {   "__comment": "cover",
+            "from": [ 1, 8, 1 ],
+            "to": [ 15, 16, 15 ],
+            "faces": {
+                
+                "up":    { "texture": "#cover_top", "cullface": "up" },
+                "north": { "texture": "#front" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

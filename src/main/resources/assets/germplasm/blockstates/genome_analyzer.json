@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "germplasm:genome_analyzer" },
+        "facing=south": { "model": "germplasm:genome_analyzer", "y": 180 },
+        "facing=west":  { "model": "germplasm:genome_analyzer", "y": 270 },
+        "facing=east":  { "model": "germplasm:genome_analyzer", "y": 90 }
+    }
+}

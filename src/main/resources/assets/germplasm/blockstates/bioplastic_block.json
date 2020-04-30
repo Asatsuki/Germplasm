@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "germplasm:bioplastic_block" },
+            { "model": "germplasm:bioplastic_block", "y": 90 },
+            { "model": "germplasm:bioplastic_block", "y": 180 },
+            { "model": "germplasm:bioplastic_block", "y": 270 }
+        ]
+    }
+}

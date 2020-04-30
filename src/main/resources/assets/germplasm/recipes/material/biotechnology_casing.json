@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "X-X",
+    "#O#",
+    "X-X"
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:basic_processor",
+      "data": 0
+    },
+    "-": {
+      "type": "forge:ore_dict",
+      "ore": "dyeLime"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "dustGlowstone"
+    },
+    "O": {
+      "item": "germplasm:base_casing",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:biotechnology_casing"
+  }
+}

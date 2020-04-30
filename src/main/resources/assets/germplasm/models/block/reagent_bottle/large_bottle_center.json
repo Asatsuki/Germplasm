@@ -1,0 +1,35 @@
+{
+    "parent":"block/block",
+    "textures":{
+        "particle": "germplasm:blocks/reagent_bottle/large_side",
+        "top":"germplasm:blocks/reagent_bottle/large_top",
+        "bottom":"germplasm:blocks/reagent_bottle/large_bottom",
+        "side":"germplasm:blocks/reagent_bottle/large_side"
+    },
+    "elements": [
+        {   "__comment": "bottle body",
+            "from": [ 5, 0, 5 ],
+            "to": [ 11, 10, 11 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#bottom" },
+                "north": { "texture": "#side_scale" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        },
+        {   "__comment": "bottle neck",
+            "from": [ 6, 10, 6 ],
+            "to": [ 10, 13, 10 ],
+            "faces": {
+                "down":  { "texture": "#bottom", "cullface": "down" },
+                "up":    { "texture": "#top" },
+                "north": { "texture": "#side" },
+                "south": { "texture": "#side" },
+                "west":  { "texture": "#side" },
+                "east":  { "texture": "#side" }
+            }
+        }
+    ]
+}

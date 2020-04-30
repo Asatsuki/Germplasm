@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " A ",
+    "O#O",
+    " B "
+  ],
+  "key": {
+    "#": {
+      "item": "germplasm:base_casing",
+      "data": 0
+    },
+    "O": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "A": {
+      "item": "minecraft:furnace",
+      "data": 0
+    },
+    "B": {
+      "item": "minecraft:iron_bars",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "germplasm:solid_fuel_generator"
+  }
+}
