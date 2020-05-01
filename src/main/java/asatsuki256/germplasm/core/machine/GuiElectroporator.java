@@ -63,7 +63,7 @@ public class GuiElectroporator extends GuiContainer {
 	@Override
     protected void drawGuiContainerBackgroundLayer(float partialTick, int mouseX, int mouseZ) {
         this.mc.renderEngine.bindTexture(TEXTURE0);
-        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 175, 219);
+        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 177, 219);
         //progress
         this.drawTexturedModalRect(guiLeft + 66, guiTop + 48, 192, 40, MathHelper.ceil(tile.getProgress() * 46), 48);
         //energy

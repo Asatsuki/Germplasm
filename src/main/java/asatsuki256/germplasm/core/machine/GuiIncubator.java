@@ -58,7 +58,7 @@ public class GuiIncubator extends GuiContainer {
 	@Override
     protected void drawGuiContainerBackgroundLayer(float partialTick, int mouseX, int mouseZ) {
         this.mc.renderEngine.bindTexture(TEXTURE0);
-        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 175, 219);
+        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 177, 219);
         //progress
         this.drawTexturedModalRect(guiLeft + 68, guiTop + 53, 192, 0, MathHelper.ceil(tile.getProgress() * 42), 25);
         //energy

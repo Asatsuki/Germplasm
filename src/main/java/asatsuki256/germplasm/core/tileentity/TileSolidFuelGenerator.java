@@ -13,6 +13,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ITickable;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.energy.CapabilityEnergy;
+import net.minecraftforge.energy.IEnergyStorage;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
@@ -20,6 +21,7 @@ public class TileSolidFuelGenerator extends TileEntity implements ITickable {
 	
 	public static final int energyPerTick = 80;
 	public static final int timePerTick = 4;
+	public static final int maxExtract = 1000;
 	
 	ItemStackHandler inventory;
 	EnergyWrapper energy;
@@ -28,7 +30,7 @@ public class TileSolidFuelGenerator extends TileEntity implements ITickable {
 	
 	public TileSolidFuelGenerator() {
 		inventory = new ItemStackHandler(1);
-		energy = new EnergyWrapper(100000, 2000, 2000);
+		energy = new EnergyWrapper(100000, maxExtract, maxExtract);
 		maxBurnTime = 0;
 		burnTime = 0;
 	}
@@ -40,6 +42,7 @@ public class TileSolidFuelGenerator extends TileEntity implements ITickable {
 			this.world.notifyBlockUpdate(this.pos, this.world.getBlockState(this.pos), this.world.getBlockState(this.pos), 2);
 			if (energy.getMaxEnergyStored() - energy.getEnergyStored() >= energyPerTick) {
 				process();
+				output();
 			}
 		}
 	}
@@ -60,6 +63,19 @@ public class TileSolidFuelGenerator extends TileEntity implements ITickable {
 		energy.receiveEnergy(energyPerTick, false);
 	}
 	
+	private void output() {
+		for (EnumFacing facing : EnumFacing.values()) {
+			TileEntity tile = world.getTileEntity(pos.offset(facing));
+			if (tile != null && tile.hasCapability(CapabilityEnergy.ENERGY, facing.getOpposite())) {
+				IEnergyStorage destination = tile.getCapability(CapabilityEnergy.ENERGY, facing.getOpposite());
+				int extract = energy.extractEnergy(maxExtract, true);
+				if (destination.canReceive()) {
+					int receive = destination.receiveEnergy(extract, false);
+					energy.extractEnergy(receive, false);
+				}
+			}
+		}
+	}
 
 	@Override
 	public void readFromNBT(NBTTagCompound nbt) {

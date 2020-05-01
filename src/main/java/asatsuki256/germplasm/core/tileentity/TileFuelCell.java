@@ -31,7 +31,7 @@ public class TileFuelCell extends TileEntity implements ITickable {
 	
 	public TileFuelCell() {
 		fluidTank = new FluidTankWithType(GermplasmFluids.bioethanol, 4000);
-		energy = new EnergyWrapper(1000000, 1000, 1000);
+		energy = new EnergyWrapper(1000000, maxExtract, maxExtract);
 		left = 0;
 	}
 	

@@ -58,7 +58,7 @@ public class GuiSolidFuelGenerator extends GuiContainer {
 	@Override
     protected void drawGuiContainerBackgroundLayer(float partialTick, int mouseX, int mouseZ) {
         this.mc.renderEngine.bindTexture(TEXTURE0);
-        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 175, 219);
+        this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, 177, 219);
         //remaining
         int fireLength = 13 - MathHelper.ceil(tile.getRemaining() * 13);
         this.drawTexturedModalRect(guiLeft + 81, guiTop + 47 + fireLength, 192, 8 + fireLength, 14, 13 - fireLength);
