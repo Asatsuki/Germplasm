@@ -42,8 +42,8 @@ public class TileFuelCell extends TileEntity implements ITickable {
 			this.world.notifyBlockUpdate(this.pos, this.world.getBlockState(this.pos), this.world.getBlockState(this.pos), 2);
 			if (energy.getMaxEnergyStored() - energy.getEnergyStored() >= energyPerTick) {
 				process();
-				output();
 			}
+			output();
 		}
 	}
 	

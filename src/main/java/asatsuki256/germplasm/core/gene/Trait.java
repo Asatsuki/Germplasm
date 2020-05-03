@@ -62,6 +62,18 @@ public class Trait extends GermplasmUnitBase implements ITrait {
 		this.defaultName = traitType.getTraitId() + " " + traitStrength;
 	}
 	
+	/*
+	 * TODO: そもそもdefaultNameというフィールドに頼るのをやめ、getDefaultName()などのメソッドを作り他のUnitの参照個所を修正する
+	 */
+	@Override
+	public String getDisplayName() {
+		if(name != null) {
+			return name;
+		} else {
+			return traitType.getDisplayName() + " " + traitStrength;
+		}
+	}
+	
 	@Override
 	public int analyze(boolean simulated) {
 		int analyzed = 0;
