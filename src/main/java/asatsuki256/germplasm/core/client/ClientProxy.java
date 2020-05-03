@@ -1,14 +1,19 @@
 package asatsuki256.germplasm.core.client;
 
+import static asatsuki256.germplasm.core.GermplasmCore.MODID;
+
 import asatsuki256.germplasm.core.CommonProxy;
 import asatsuki256.germplasm.core.GermplasmCore;
 import asatsuki256.germplasm.core.block.GermplasmBlocks;
+import asatsuki256.germplasm.core.client.model.ReagentBottleModelLoader;
+import asatsuki256.germplasm.core.client.model.SeedModelLoader;
 import asatsuki256.germplasm.core.client.tileentity.TileFuelCellRenderer;
 import asatsuki256.germplasm.core.client.tileentity.TileGeneticCropRenderer;
 import asatsuki256.germplasm.core.client.tileentity.TileGenomeAnalyzerRenderer;
 import asatsuki256.germplasm.core.client.tileentity.TileMicroscopeRenderer;
 import asatsuki256.germplasm.core.client.tileentity.TileReagentBottleRenderer;
 import asatsuki256.germplasm.core.fluid.GermplasmFluids;
+import asatsuki256.germplasm.core.gene.trait.TraitTypeRegistry;
 import asatsuki256.germplasm.core.item.GermplasmItems;
 import asatsuki256.germplasm.core.tileentity.TileDnaExtractor;
 import asatsuki256.germplasm.core.tileentity.TileElectroporator;
@@ -25,8 +30,11 @@ import asatsuki256.germplasm.core.tileentity.TileResearchDesk;
 import asatsuki256.germplasm.core.tileentity.TileSampleSorter;
 import asatsuki256.germplasm.core.tileentity.TileSolidFuelGenerator;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelBakery;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -41,6 +49,11 @@ public class ClientProxy extends CommonProxy{
 		GermplasmBlocks.registerModels();
 		GermplasmFluids.register();
 		GermplasmFluids.renderFluids();
+		
+		TraitTypeRegistry.registerModels();
+		ModelLoaderRegistry.registerLoader(new SeedModelLoader());
+    	ModelLoaderRegistry.registerLoader(new ReagentBottleModelLoader());
+    	ModelBakery.registerItemVariants(GermplasmItems.seed_sample, new ModelResourceLocation(new ResourceLocation(MODID, "seed/seed_sample_plate"), "inventory"));
 	}
 	
 	@Override

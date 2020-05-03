@@ -11,7 +11,6 @@ import asatsuki256.germplasm.core.fluid.GermplasmFluids;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFarmland;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -26,6 +25,7 @@ import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.fluids.Fluid;
@@ -143,13 +143,14 @@ public class ItemWateringCan extends ItemBase {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public String getItemStackDisplayName(final ItemStack stack) 
 	{
 		String unlocalizedName = this.getUnlocalizedName(stack) + ".name";
 		FluidStack fluidStack = getFluidStack(stack);
 
-		String displayName = I18n.format(unlocalizedName).trim();
+		String displayName = I18n.translateToLocal(unlocalizedName).trim();
 		if (!this.isEmpty(stack)) {
 			displayName += " (" + fluidStack.getLocalizedName() + ")";
 		}

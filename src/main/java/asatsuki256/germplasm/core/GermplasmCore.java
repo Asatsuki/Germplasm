@@ -78,8 +78,6 @@ public class GermplasmCore {
     	MinecraftForge.EVENT_BUS.register(GermplasmVillage.class);
     	GermplasmPacketHandler.init();
     	CompatHandler.preInit();
-    	ModelLoaderRegistry.registerLoader(new SeedModelLoader());
-    	ModelLoaderRegistry.registerLoader(new ReagentBottleModelLoader());
     }
     
     @EventHandler

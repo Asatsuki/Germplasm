@@ -10,7 +10,6 @@ import asatsuki256.germplasm.core.tileentity.TileReagentBottle;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
@@ -21,6 +20,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.fluids.FluidStack;
@@ -137,13 +137,14 @@ public class ItemBlockReagentBottle extends ItemBlock {
 		return new FluidHandlerItemStack(stack, CAPACITY);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Override
 	public String getItemStackDisplayName(final ItemStack stack) 
 	{
 		String unlocalizedName = this.getUnlocalizedName(stack) + ".name";
 		FluidStack fluidStack = getFluidStack(stack);
 
-		String displayName = I18n.format(unlocalizedName).trim();
+		String displayName = I18n.translateToLocal(unlocalizedName).trim();
 		if (!this.isEmpty(stack)) {
 			displayName += " (" + fluidStack.getLocalizedName() + ")";
 		}

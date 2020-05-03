@@ -59,7 +59,7 @@ public class Trait extends GermplasmUnitBase implements ITrait {
 	}
 	
 	private void resetDefaultName() {
-		this.defaultName = traitType.getDisplayName() + " " + traitStrength;
+		this.defaultName = traitType.getTraitId() + " " + traitStrength;
 	}
 	
 	@Override

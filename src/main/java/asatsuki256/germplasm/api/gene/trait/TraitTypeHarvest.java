@@ -8,10 +8,13 @@ import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.relauncher.Side;
 
 public class TraitTypeHarvest extends TraitType{
 	
-	static {ModelBakery.registerItemVariants(GermplasmItems.seed_sample, new ModelResourceLocation(new ResourceLocation(MODID, "seed/seed_sample_plate"), "inventory"));}
+	static {
+		
+		}
 	
 	public static final ResourceLocation[] DEFAULT_TEXTURES = new ResourceLocation[] {
 			new ResourceLocation(MODID, "textures/crops/weed/0.png"),
@@ -33,7 +36,7 @@ public class TraitTypeHarvest extends TraitType{
 	
 	public TraitTypeHarvest(String traitId, String unlocalizedName) {
 		super(traitId, unlocalizedName);
-		this.setItemModel(new ModelResourceLocation(new ResourceLocation(MODID, "seed/normal"), "inventory"));
+
 	}
 	
 	public TraitTypeHarvest setHarvest(ItemStack harvest) {
