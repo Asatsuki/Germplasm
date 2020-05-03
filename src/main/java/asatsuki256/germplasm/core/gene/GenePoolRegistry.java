@@ -56,6 +56,7 @@ public class GenePoolRegistry implements IGenePoolRegistry{
 	public static GenePool general;
 	public static GenePool wheat;
 	public static GenePool carrot;
+	public static GenePool potato;
 	public static GenePool waterlily;
 	public static GenePool rose;
 	public static GenePool tomato;
@@ -92,6 +93,17 @@ public class GenePoolRegistry implements IGenePoolRegistry{
 		carrot.add(new Gene(true, new Trait(TraitTypeRegistry.carrot, 1)), 1200);
 		carrot.add(new Gene(true, new Trait(TraitTypeRegistry.golden_carrot, 1)), 5);
 		registerGenePool(carrot, "carrot", new ItemStack(Items.CARROT));
+		potato = new GenePool();
+		potato.add(new Gene(true, new Trait(TraitTypeRegistry.gain, 1)), 600);
+		potato.add(new Gene(true, new Trait(TraitTypeRegistry.gain, 2)), 400);
+		potato.add(new Gene(false, new Trait(TraitTypeRegistry.gain, 3)), 200);
+		potato.add(new Gene(true, new Trait(TraitTypeRegistry.growth, 1)), 800);
+		potato.add(new Gene(false, new Trait(TraitTypeRegistry.growth, 2)), 300);
+		potato.add(new Gene(false, new Trait(TraitTypeRegistry.growth, 3)), 200);
+		potato.add(new Gene(false, new Trait(TraitTypeRegistry.cold_tolerance, 1)), 200);
+		potato.add(new Gene(true, new Trait(TraitTypeRegistry.potato, 1)), 1200);
+		potato.add(new Gene(true, new Trait(TraitTypeRegistry.iron_potato, 1)), 5);
+		registerGenePool(potato, "potato", new ItemStack(Items.POTATO));
 		waterlily = new GenePool();
 		waterlily.add(new Gene(true, new Trait(TraitTypeRegistry.gain, 1)), 600);
 		waterlily.add(new Gene(true, new Trait(TraitTypeRegistry.gain, 2)), 500);
