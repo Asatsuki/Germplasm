@@ -14,7 +14,7 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-version = "0.1.0"
+version = "0.1.1"
 group = "asatsuki256.germplasm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Germplasm"
 

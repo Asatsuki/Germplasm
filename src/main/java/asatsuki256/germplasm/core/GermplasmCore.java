@@ -42,7 +42,7 @@ public class GermplasmCore {
 	public static final String UNLOC_PREFIX = "germplasm.";
 	public static final String NBT_PREFIX = "germplasm.";
     public static final String NAME = "Germplasm";
-    public static final String VERSION = "0.1.0";
+    public static final String VERSION = "0.1.1";
     
     public static final Logger LOGGER = LogManager.getLogger();
     

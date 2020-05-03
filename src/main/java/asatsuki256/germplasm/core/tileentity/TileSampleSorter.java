@@ -2,6 +2,7 @@ package asatsuki256.germplasm.core.tileentity;
 
 import static asatsuki256.germplasm.core.GermplasmCore.NBT_PREFIX;
 
+import java.util.Arrays;
 import java.util.List;
 
 import asatsuki256.germplasm.api.gene.GeneAPI;
@@ -27,7 +28,6 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
-import scala.actors.threadpool.Arrays;
 
 public class TileSampleSorter extends TileEntity implements ITickable {
 	
