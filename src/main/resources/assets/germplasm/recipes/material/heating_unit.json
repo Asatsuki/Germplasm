@@ -15,8 +15,8 @@
       "ore": "dustRedstone"
     },
     "*": {
-      "type": "forge:ore_dict",
-      "ore": "barsIron"
+      "item": "minecraft:iron_bars",
+      "data": 0
     }
   },
   "result": {

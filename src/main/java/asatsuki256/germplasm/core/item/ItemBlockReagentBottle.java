@@ -162,7 +162,7 @@ public class ItemBlockReagentBottle extends ItemBlock {
 		}
 		else
 		{
-			tooltip.add("0 / 1000 mB");
+			tooltip.add("" + 0 + " / " + CAPACITY + " mB");
 		}
 
     }
