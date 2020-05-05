@@ -19,7 +19,7 @@ public class ContainerResearchDesk extends Container {
         this.zCoord = z;
         this.inventory = tile;
         
-        this.addSlotToContainer(new Slot(tile, 0, 80, 103));
+        this.addSlotToContainer(new SlotInventoryValid(tile, 0, 80, 103));
         
         int i = 34;
         

@@ -3,6 +3,8 @@ package asatsuki256.germplasm.core.tileentity;
 import static asatsuki256.germplasm.core.GermplasmCore.NBT_PREFIX;
 import static asatsuki256.germplasm.core.GermplasmCore.UNLOC_PREFIX;
 
+import asatsuki256.germplasm.api.gene.GeneAPI;
+import asatsuki256.germplasm.api.gene.unit.IGermplasmUnitBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -148,7 +150,9 @@ public class TileResearchDesk extends TileEntity implements IInventory {
 
 	@Override
 	public boolean isItemValidForSlot(int index, ItemStack stack) {
-		return true;
+		NBTTagCompound nbt = stack.getTagCompound();
+		IGermplasmUnitBase unit = GeneAPI.nbtHelper.getUnitFromIndividualNBT(nbt);
+		return unit != null;
 	}
 
 	@Override

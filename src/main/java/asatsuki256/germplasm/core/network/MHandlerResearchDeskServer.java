@@ -26,6 +26,7 @@ public class MHandlerResearchDeskServer implements IMessageHandler<MessageResear
 			ItemStack seedStack = ((TileResearchDesk)tile).getStackInSlot(0);
 			NBTTagCompound nbt = seedStack.getTagCompound();
 			IGermplasmUnitBase unit = GeneAPI.nbtHelper.getUnitFromIndividualNBT(nbt);
+			if (unit == null) return null;
 			if(message.type == MessageResearchDeskServer.TYPE_NAME) {
 				String name = message.name;
 				if(name == null || name.isEmpty()) {
