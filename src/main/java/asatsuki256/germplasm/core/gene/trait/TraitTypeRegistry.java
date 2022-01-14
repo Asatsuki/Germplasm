@@ -62,7 +62,7 @@ public class TraitTypeRegistry implements ITraitTypeRegistry{
 	}
 	
 	/*
-	 * ƒNƒ‰ƒCƒAƒ“ƒg‚ÅŒÄ‚Ño‚·
+	 * ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã§å‘¼ã³å‡ºã™
 	 */
 	public static void registerModels() {
 		wheat
