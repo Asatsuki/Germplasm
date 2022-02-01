@@ -20,9 +20,6 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
-    flatDir {
-        dir 'libs'
-    }
 }
         
 apply plugin: 'net.minecraftforge.gradle.forge'
